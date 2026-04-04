@@ -7,14 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace pokedex_web
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class MiPerfil : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnSalir_Click(object sender, EventArgs e)
+        protected void btnGuardar_Click(object sender, EventArgs e)
         {
 
         }
