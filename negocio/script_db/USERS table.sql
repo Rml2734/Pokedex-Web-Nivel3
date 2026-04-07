@@ -30,8 +30,9 @@ create procedure insertarNuevo
 as
 insert into USERS (email, pass, admin) output inserted.id values (@email, @pass, 0)
 
-exec insertarNuevo 'algo', '123'
+exec insertarNuevo 'Prueba1', 'contraseña123'
 select * from USERS
+update users set admin = 1 where id = 2
 
 go
 
