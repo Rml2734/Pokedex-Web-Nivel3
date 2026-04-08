@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using dominio;
-
+using System.Configuration;
 
 
 namespace negocio
@@ -67,9 +67,7 @@ namespace negocio
             {
 
                 throw ex;
-            }
-
-            
+            }  
         }
 
         public List<Pokemon> listarConSP()
@@ -119,7 +117,6 @@ namespace negocio
         public void agregar(Pokemon nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
-
 
             try
             {
